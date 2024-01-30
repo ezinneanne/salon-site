@@ -1,0 +1,288 @@
+/******************************************
+/* CSS
+/*******************************************/
+/* import google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Kiwi+Maru&display=swap');
+
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/* html */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Kiwi Maru', serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+/* font */
+.font1 {
+  font-size: 4rem;
+}
+
+.mar1 {
+  margin-top: 0;
+}
+
+.mar2 {
+  margin-bottom: 0;
+}
+
+.mar {
+  margin-top: 1rem;
+}
+
+/******************************************
+/* LAYOUT*/
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
+} 
+  
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+  
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.center-text {
+  text-align: center;
+}
+
+/* the nav*/
+
+.containers {
+  max-width: auto;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 40px;
+}
+
+.logo {
+  font-family: 'Dancing Script', cursive;
+  font-weight: 600;
+}
+
+.nav {
+  background-color: #fff;
+  color: #000;
+  height: 80px;
+}
+
+.nav ul {
+  display: flex;
+}
+
+.nav a {
+  color: #000;
+  padding: 10px;
+  margin: 0 5px;
+}
+
+.nav a:hover {
+  border-bottom: 2px #fff solid;
+}
+
+.nav .flex {
+  justify-content: space-between;
+}
+
+/* heading */
+.heading {
+  height: 600px;
+  background-image: url('background-1.jpg');
+  width: 100%;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.over {
+  height: 600px;
+}
+
+.heading-card {
+  position: relative;
+  top: 60px;
+  height: 300px;
+  width: 300px;
+  padding: 40px;
+  z-index: 100;
+  justify-self: flex-start;
+}
+
+.grid-1 {
+  grid-template-columns: 1fr;
+}
+
+.heading .grid {
+  overflow: visible;
+  gap: 30px;
+}
+
+.heading-card .spanned {
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.card {
+  background-color: #000;
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 10px;
+}
+
+.heading-texts {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading-text .font {
+  font-size: 9.5rem;
+  font-weight: 300;
+  margin: 0;
+  margin-top: 4rem;
+}
+
+.color {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* button*/
+.btn {
+  display: inline-block;
+  padding: 13px 35px;
+  cursor: pointer;
+  background: #000;
+  border: none;
+  color: #fff;
+}
+
+
+.btn-outline {
+  background-color: transparent;
+  border: 1px #fff solid;
+}
+
+.btn:hover {
+  transform: scale(0.98);
+}
+
+.btns {
+  display: inline-block;
+  padding: 16px 40px;
+  cursor: pointer;
+  background: #fff;
+  border: none;
+  color: #000;
+}
+
+/* first section */
+.spaces {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  height: 400px;
+}
+
+/* second section */
+.second {
+  height: 500px;
+  background: rgb(248, 248, 248);
+  margin-top: 4rem;
+}
+
+/* third section */
+.third {
+  height: 600px;
+  margin-top: 4rem;
+}
+
+.bigbtn {
+  display: inline-block;
+  padding: 0.5rem 3.5rem;
+  cursor: pointer;
+  background: #000;
+  border: none;
+  color: #fff; 
+  position: relative;
+  bottom: 1.6rem;
+  left: 4rem;
+  width: 250px;
+}
+
+.images {
+  position: relative;
+}
+
+.line-height {
+  line-height: 2.2;
+}
+
+.span {
+  font-weight: 600;
+  font-size: 50px;
+}
+
+.wdth {
+  width: 280px;
+  padding: 0.7rem 3.5rem;
+}
+
+.text {
+  position: relative;
+  bottom: 35rem;
+  width: 510px;
+}
+
+.bigbtns {
+  display: inline-block;
+  padding: 0.5rem 3.5rem;
+  cursor: pointer;
+  background: #000;
+  border: none;
+  color: #fff; 
+}
+
+.gap {
+  gap: 15px;
+}
+
+.image {
+  height: 216px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
