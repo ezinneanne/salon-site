@@ -118,7 +118,7 @@ img {
 
 /* heading */
 .heading {
-  height: 600px;
+  height: 680px;
   background-image: url('background-1.jpg');
   width: 100%;
   background-position: center center;
@@ -162,7 +162,6 @@ img {
   border-radius: 10px;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
   padding: 20px;
-  margin: 10px;
 }
 
 .heading-texts {
