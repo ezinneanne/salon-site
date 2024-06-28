@@ -108,7 +108,7 @@ img {
   margin: 0 5px;
 }
 
-.nav a:hover {
+.btns{
   border-bottom: 2px #fff solid;
 }
 
@@ -116,6 +116,13 @@ img {
   justify-content: space-between;
 }
 
+.nav-link:hover{
+  text-decoration: underline;
+}
+
+.nav-link:active {
+  color: #808080; 
+}
 /* heading */
 .heading {
   height: 680px;
@@ -197,8 +204,12 @@ img {
   border: 1px #fff solid;
 }
 
-.btn:hover {
+.btn:hover, .btns:hover {
   transform: scale(0.98);
+}
+
+.btn:active, .btns:active {
+  color: lightblue;
 }
 
 .btns {
@@ -284,4 +295,9 @@ img {
   height: 216px;
   object-fit: cover;
   margin-bottom: 1rem;
+}
+
+/*ABOUT HTML*/
+.backlayer {
+  background-color: #e9e9e9;
 }
