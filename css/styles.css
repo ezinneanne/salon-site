@@ -377,3 +377,27 @@ img {
 hr {
   margin: 30px 0;
 }
+
+/*footer*/
+.footer {
+  height: 200px;
+  background-color: #e4e4e4;
+}
+
+.footer ul {
+  display: flex;
+}
+
+.footer a {
+  color: #000;
+  padding: 10px;
+  margin: 0 5px;
+}
+
+.btns{
+  border-bottom: 2px #fff solid;
+}
+
+.footer .flex {
+  justify-content: space-between;
+}
