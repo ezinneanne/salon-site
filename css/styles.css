@@ -52,7 +52,7 @@ img {
 /******************************************
 /* LAYOUT*/
 .container {
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
     overflow: auto;
     padding: 0 40px;
@@ -81,7 +81,7 @@ img {
 /* the nav*/
 
 .containers {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
   overflow: auto;
   padding: 0 40px;
@@ -425,20 +425,161 @@ hr {
 .image {
   max-width: 100%;
   height: auto;
+  display: block;
+  margin-bottom: 20px;
 }
 
 .services {
   font-family: 'Courgette', cursive;
   text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.table-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .table {
   border-collapse: collapse;
+  margin-bottom: 20px;
 }
 
 .service {
-  flex-basis: 0;
-  flex: 1;
-  flex-grow: 1;
-  max-width: 100%;
+  width: 100%;
+}
+
+.table td {
+  padding: 12px;
+  text-align: left;
+}
+
+.table .column1 {
+  width: 70%;
+}
+
+.table .column2 {
+  width: 30%;
+  text-align: right;
+}
+
+.p1, .p2 {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.p2 {
+  font-style: italic;
+}
+
+/*contact*/
+.mar {
+  margin: 1.5rem 0;
+}
+
+.form-container {
+  background-color: #fff;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 10px auto;
+  max-width: 600px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input[type=text], input[type=email], textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #3cae45;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #4aac32;
+}
+
+/*Mobile responsive*/
+
+/* Mobile Responsive Styling for services */
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+    padding: 10px;
+  }
+
+  .services {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .table td {
+    padding: 8px;
+  }
+
+  .table .column1, .table .column2 {
+    width: 100%;
+    display: block;
+    text-align: left;
+  }
+
+  .table .column2 {
+    text-align: left;
+    margin-top: 5px;
+  }
+
+  .table tr {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .table tr:last-child {
+    border-bottom: none;
+  }
+
+  .table td::before {
+    content: attr(class);
+    display: none;
+  }
+
+  .p1, .p2 {
+    font-size: 12px;
+  }
+}
+
+/* Responsive Styling for contact */
+@media (max-width: 768px) {
+  .form-container {
+    padding: 15px;
+    margin: 10px 5%;
+  }
+
+  input[type=text], input[type=email], textarea {
+    padding: 10px 15px;
+    margin: 6px 0;
+  }
+
+  input[type=submit] {
+    padding: 12px 15px;
+  }
 }
