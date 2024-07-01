@@ -420,7 +420,25 @@ hr {
   padding: 10px;
 }
 
+/* services */
+
 .image {
-  /*work on the image */
-  width: 100vw;
+  max-width: 100%;
+  height: auto;
+}
+
+.services {
+  font-family: 'Courgette', cursive;
+  text-align: center;
+}
+
+.table {
+  border-collapse: collapse;
+}
+
+.service {
+  flex-basis: 0;
+  flex: 1;
+  flex-grow: 1;
+  max-width: 100%;
 }
