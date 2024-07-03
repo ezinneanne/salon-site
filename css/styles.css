@@ -271,8 +271,17 @@ img {
 
 /* third section */
 .third {
-  height: 600px;
+  height: auto;
   margin-top: 4rem;
+}
+
+.space {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 .bigbtn {
@@ -285,7 +294,16 @@ img {
   position: relative;
   bottom: 1.6rem;
   left: 4rem;
-  width: 250px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.underline {
+  width: 10%; 
+  height: 2px;
+  background-color: #000;
+  margin: 0 auto; 
+  margin-top: 10px; 
 }
 
 .images {
@@ -299,11 +317,6 @@ img {
 .span {
   font-weight: 600;
   font-size: 50px;
-}
-
-.wdth {
-  width: 280px;
-  padding: 0.7rem 3.5rem;
 }
 
 .text {
@@ -551,6 +564,24 @@ input[type=submit]:hover {
   background-color: #777;
 }
 
+/* lookboook */
+.look-flex {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-between; 
+  gap: 10px; 
+}
+
+.look-image {
+  width: calc(33.33% - 10px); 
+  height: auto; 
+}
+
+.lmar {
+  margin-bottom: 0;
+}
+
+
 /*Mobile responsive*/
 
 /* for nav*/
@@ -596,6 +627,32 @@ input[type=submit]:hover {
   transform: translateY(-8px) rotate(-45deg);
 }
 
+/* footer, first and second section heights*/
+.spaces, .second, .footer {
+  height: auto;
+}
+
+.height {
+  height: auto;
+  width: auto;
+}
+
+}
+
+/*for third section index.html*/
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr; 
+  }
+
+  .bigbtn {
+    left: 0; 
+    bottom: 0; 
+  }
+
+  .stylist {
+    text-align: center; 
+  }
 }
 
 /* Mobile Responsive Styling for services */
