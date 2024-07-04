@@ -151,72 +151,6 @@ img {
   transition: all 0.3s ease-in-out;
 }
 
-
-/* heading 
-.heading {
-  height: 680px;
-  background-image: url('background-1.jpg');
-  width: 100%;
-  background-position: center center;
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  position: relative;
-}
-
-.over {
-  height: 600px;
-}
-
-.heading-card {
-  position: relative;
-  top: 60px;
-  height: 300px;
-  width: 300px;
-  padding: 40px;
-  z-index: 100;
-  justify-self: flex-start;
-}
-
-.grid-1 {
-  grid-template-columns: 1fr;
-}
-
-.heading .grid {
-  overflow: visible;
-  gap: 30px;
-}
-
-.heading-card .spanned {
-  font-weight: 600;
-  font-size: 40px;
-}
-
-.card {
-  background-color: #000;
-  color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-  padding: 20px;
-}
-
-.heading-texts {
-  display: grid;
-  justify-content: center;
-  align-items: center;
-}
-
-.heading-text .font {
-  font-size: 9.5rem;
-  font-weight: 300;
-  margin: 0;
-  margin-top: 4rem;
-}
-
-.color {
-  color: rgba(255, 255, 255, 0.7);
-}*/
-
 /* new heading */
 .top {
   margin-top: 4rem;
@@ -427,11 +361,10 @@ hr {
 
 /*footer*/
 .footer {
-  height: 250px;
-  background-color: #e4e4e4;
+  background-color: #000;
 }
 
-.footer ul {
+/*.footer ul {
   display: flex;
   flex-direction: column;
 }
@@ -449,6 +382,7 @@ hr {
 .footer .flex {
   justify-content: space-between;
 }
+*/
 
 .first {
   width: 300px;
@@ -760,7 +694,7 @@ input[type=submit]:hover {
 }
 
 /* footer, first and second section heights*/
-.spaces, .second, .footer {
+.spaces, .second {
   height: auto;
 }
 
@@ -843,6 +777,7 @@ input[type=submit]:hover {
   .form-container {
     padding: 15px;
     margin: 10px 5%;
+    width: auto;
   }
 
   input[type=text], input[type=email], textarea {
@@ -862,5 +797,117 @@ input[type=submit]:hover {
      width: 100%;
      height: 270px;
      object-fit: cover;
+  }
+}
+
+
+
+
+
+/* footer */
+
+.footer-style {
+  position: relative;
+  bottom: 0%;
+  /*max-width: 1200px;
+  width: 95%;*/
+  border-radius: 6px;
+}
+.footer .footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3.5rem;
+  padding: 30px 0;
+}
+.footer-row .footer-col h4 {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.footer-col .links {
+  margin-top: 20px;
+}
+.footer-col .links li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+.footer-col .links li a {
+  text-decoration: none;
+  color: #fff;
+}
+.footer-col .links li a:hover {
+  color: #808080;
+}
+.footer-col p {
+  margin: 20px 0;
+  color: #f5f5f5;
+  max-width: 300px;
+}
+.footer-col form {
+  display: flex;
+  gap: 5px;
+}
+.footer-col input {
+  height: 40px;
+  border-radius: 6px;
+  background: none;
+  width: 100%;
+  outline: none;
+  border: 1px solid #808080 ;
+  caret-color: #fff;
+  color: #fff;
+  padding-left: 10px;
+}
+.footer-col input::placeholder {
+  color: #f5f5f5;
+}
+ .footer-col form button {
+  background: #fff;
+  outline: none;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+.footer-col form button:hover {
+  background: #808080;
+}
+.footer-col .icons {
+  display: flex;
+  margin-top: 30px;
+  gap: 30px;
+  cursor: pointer;
+}
+.footer-col .icons i {
+  color: #fff;
+}
+.footer-col .icons i:hover  {
+  color: #777;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    transform: none;
+    width: 100%;
+    border-radius: 0;
+  }
+  .footer .footer-row {
+    padding: 20px 0;
+    gap: 1rem;
+  }
+  .footer-col form {
+    display: block;
+  }
+  .footer-col form :where(input, button) {
+    width: 100%;
+  }
+  .footer-col form button {
+    margin: 10px 0 0 0;
   }
 }
